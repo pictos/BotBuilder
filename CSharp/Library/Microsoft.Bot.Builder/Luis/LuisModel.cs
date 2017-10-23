@@ -178,6 +178,7 @@ namespace Microsoft.Bot.Builder.Luis
         /// <param name="subscriptionKey">The LUIS subscription key.</param>
         /// <param name="apiVersion">The LUIS API version.</param>
         /// <param name="domain">Domain where LUIS model is located.</param>
+	/// <param name="threshold">Threshold for the top scoring intent.</param>
 		public LuisModelAttribute(string modelID, string subscriptionKey,
             LuisApiVersion apiVersion = LuisApiVersion.V2, string domain = null, double threshold =0.0d)
         {
