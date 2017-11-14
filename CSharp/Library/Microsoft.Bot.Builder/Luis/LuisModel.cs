@@ -1,4 +1,4 @@
-﻿// 
+// 
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license.
 // 
@@ -122,7 +122,7 @@ namespace Microsoft.Bot.Builder.Luis
         /// </summary>
         public LuisApiVersion ApiVersion => apiVersion;
 
-	private readonly double threshold;
+	    private readonly double threshold;
         /// <summary>
         /// Threshold for top scoring intent
         /// </summary>
@@ -178,8 +178,8 @@ namespace Microsoft.Bot.Builder.Luis
         /// <param name="subscriptionKey">The LUIS subscription key.</param>
         /// <param name="apiVersion">The LUIS API version.</param>
         /// <param name="domain">Domain where LUIS model is located.</param>
-	/// <param name="threshold">Threshold for the top scoring intent.</param>
-	public LuisModelAttribute(string modelID, string subscriptionKey,
+	    /// <param name="threshold">Threshold for the top scoring intent.</param>
+	    public LuisModelAttribute(string modelID, string subscriptionKey,
             LuisApiVersion apiVersion = LuisApiVersion.V2, string domain = null, double threshold =0.0d)
         {
             SetField.NotNull(out this.modelID, nameof(modelID), modelID);
