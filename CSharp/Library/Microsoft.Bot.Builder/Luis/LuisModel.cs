@@ -180,7 +180,7 @@ namespace Microsoft.Bot.Builder.Luis
         /// <param name="domain">Domain where LUIS model is located.</param>
 	    /// <param name="threshold">Threshold for the top scoring intent.</param>
 	    public LuisModelAttribute(string modelID, string subscriptionKey,
-            LuisApiVersion apiVersion = LuisApiVersion.V2, string domain = null, double threshold =0.0d)
+            LuisApiVersion apiVersion = LuisApiVersion.V2, string domain = null, double threshold = 0.0d)
         {
             SetField.NotNull(out this.modelID, nameof(modelID), modelID);
             SetField.NotNull(out this.subscriptionKey, nameof(subscriptionKey), subscriptionKey);
