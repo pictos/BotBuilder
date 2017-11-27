@@ -34,7 +34,7 @@ var inMemoryStorage = new builder.MemoryBotStorage();
 var connector = new builder.ConsoleConnector().listen();
 var bot = new builder.UniversalBot(connector, function (session){
     session.send("Say 'order pizza' to start a new order. ");
-});
+}).set('storage', inMemoryStorage); // Register in memory storage
 
 // Add dialog for continuing previous order
 bot.dialog('continueOrderDialog', [
