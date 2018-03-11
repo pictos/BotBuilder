@@ -1,6 +1,4 @@
-{
-  "References": [ "Microsoft.Bot.Sample.AnnotatedSandwichBot.dll" ],
-  "Imports": [ "Microsoft.Bot.Sample.AnnotatedSandwichBot.Resource" ],
+{  
   "type": "object",
   "required": [
     "Sandwich",
